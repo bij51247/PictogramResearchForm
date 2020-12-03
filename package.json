@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "dev": "node index.js",
-     "build": "next build",
-     "heroku-postbuild": "npm run-script build",
-     "start": "next start -p 8080"
+     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
