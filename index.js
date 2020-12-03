@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 4000;
-}
+}1
 app.listen(port, () => {
   console.log('running');
 });
