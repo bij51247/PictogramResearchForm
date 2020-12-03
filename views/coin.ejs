@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('layouts/head') %>
+
+<body>
+
+  <%- include('layouts/header') %>
+  <%- include('layouts/question') %>
+
+  <section class="conA">
+    <!-- <form action="/post/coin" method="POST"> -->
+    <div>
+      <img src="img/coin/Obj.png">
+      <select name="obj">
+        <option value="1">1位</option>
+        <option value="2">2位</option>
+        <option value="3">3位</option>
+        <option value="4">4位</option>
+        <option value="5">5位</option>
+      </select>
+    </div>
+
+    <div>
+      <img src="img/coin/Obj+Fun.png">
+      <select name="obj_fun">
+        <option value="1">1位</option>
+        <option value="2">2位</option>
+        <option value="3">3位</option>
+        <option value="4">4位</option>
+        <option value="5">5位</option>
+      </select>
+    </div>
+
+    <div>
+      <img src="img/coin/Obj+Situ+Mov.png">
+      <select name="obj_situ_mov">
+        <option value="1">1位</option>
+        <option value="2">2位</option>
+        <option value="3">3位</option>
+        <option value="4">4位</option>
+        <option value="5">5位</option>
+      </select>
+    </div>
+
+    <div>
+      <img src="img/coin/Obj+Situ.png">
+      <select name="obj_situ">
+        <option value="1">1位</option>
+        <option value="2">2位</option>
+        <option value="3">3位</option>
+        <option value="4">4位</option>
+        <option value="5">5位</option>
+      </select>
+    </div>
+
+    <div>
+      <img src="img/coin/Situ.png" style=>
+      <select name="situ">
+        <option value="1">1位</option>
+        <option value="2">2位</option>
+        <option value="3">3位</option>
+        <option value="4">4位</option>
+        <option value="5">5位</option>
+      </select>
+    </div>
+    <div class="form-group text-center mt-5">
+      <input type="submit" value="次のアンケートへ" class="btn btn-primary">
+    </div>
+    <!-- </form> -->
+    <a href="/escape">escape</a>
+  </section>
+
+  <%- include('layouts/footer') %>
+</body>
+
+</html>

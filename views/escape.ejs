@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('layouts/head') %>
+
+<body>
+  <%- include('layouts/header') %>
+  <%- include('layouts/question') %>
+
+
+  <section class="conA">
+    <form action="/post/refuge" method="POST">
+      <div>
+        <img src="img/refuge/Situ+Obj.png" style=>
+        <select name="obj_situ">
+          <option value="1">1位</option>
+          <option value="2">2位</option>
+          <option value="3">3位</option>
+          <option value="4">4位</option>
+          <option value="5">5位</option>
+        </select>
+      </div>
+      <div>
+        <img src="img/refuge/Mov+Fun.png">
+        <select id="obj" name="situ_mov_fun">
+          <option value="1">1位</option>
+          <option value="2">2位</option>
+          <option value="3">3位</option>
+          <option value="4">4位</option>
+          <option value="5">5位</option>
+        </select>
+      </div>
+
+      <div>
+        <img src="img/refuge/Obj.png">
+        <select name="obj">
+          <option value="1">1位</option>
+          <option value="2">2位</option>
+          <option value="3">3位</option>
+          <option value="4">4位</option>
+          <option value="5">5位</option>
+        </select>
+      </div>
+
+      <div>
+        <img src="img/refuge/Obj+Fun.png">
+        <select name="obj_fun">
+          <option value="1">1位</option>
+          <option value="2">2位</option>
+          <option value="3">3位</option>
+          <option value="4">4位</option>
+          <option value="5">5位</option>
+        </select>
+      </div>
+
+      <div>
+        <img src="img/refuge/Situ+Mov.png">
+        <select name="situ_mov">
+          <option value="1">1位</option>
+          <option value="2">2位</option>
+          <option value="3">3位</option>
+          <option value="4">4位</option>
+          <option value="5">5位</option>
+        </select>
+      </div>
+
+      <div class="form-group mt-5">
+        <input type="submit" value="次のアンケートへ" class="btn btn-primary">
+      </div>
+    </form>
+  </section>
+
+  <%- include('layouts/footer') %>
+</body>
+
+</html>

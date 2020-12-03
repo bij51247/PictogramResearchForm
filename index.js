@@ -11,9 +11,31 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/test', (req, res) => {
-  res.render('test');
+app.get('/', (req, res) => {
+  res.render('index');
 });
+app.get('/coin', (req, res) => {
+  var data = {
+    title: 'コインロッカー',
+  }
+  res.render('coin', data);
+});
+app.get('/escape', (req, res) => {
+  var data = {
+    title: '広域避難場所',
+  }
+  res.render('escape', data);
+});
+app.get('/items', (req, res) => {
+  var data = {
+    title: '忘れ物取扱所',
+  }
+  res.render('items', data);
+});
+app.get('/last', (req, res) => {
+  res.render('last');
+});
+
 
 let port = process.env.PORT;
 if (port == null || port == "") {
