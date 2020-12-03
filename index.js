@@ -11,10 +11,14 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/test', (req, res) => {
+  res.render('test');
+});
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 4000;
-}1
+} 1
 app.listen(port, () => {
   console.log('running');
 });
